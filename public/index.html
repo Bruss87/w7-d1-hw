@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>To Do List</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="./css/styles.css">
+<script src="./js/bundle.js"></script>
+</head>
+<body>
+<div id="app">
+<ul>
+    <li v-for="activity in activities">
+    <span>{{activity}}</span>
+    </li>
+</ul>
+<input type="text" v-model="newActivity">
+<button v-on:click="saveNewActivity">Add new activity</button>
+</div>
+</body>
+</html>
